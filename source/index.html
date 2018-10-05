@@ -8,30 +8,41 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="header__menu">
-      <ul class="actions-list">
-        <li class="actions-list__item">Sign In</li>
-        <li class="actions-list__item">Sign Up</li>
-      </ul>
-    </div>
-    <div class="header__logo"><img src="img/logo.svg" height="45" width="330" alt="Oxford Journals" /></div>
-    <nav class="header__nav">
-      <ul class="nav-list">
-        <li class="nav-list__item">Journals A to Z</li>
-        <li class="nav-list__item">Journals to Subjects</li>
-        <li class="nav-list__item">Customer Services</li>
-        <li class="nav-list__item">Resources</li>
-        <li class="nav-list__item">
-          <input type="search" />
+    <div class="header-wrapper">
+      <ul class="header-list">
+        <li class="header-list__item">
+          <div class="header__menu">
+            <ul class="actions-list">
+              <li class="actions-list__item">Sign In</li>
+              <li class="actions-list__item">Sign Up</li>
+            </ul>
+          </div>
         </li>
-        <li class="nav-list__item">Advanced Search</li>
+        <li class="header-list__item header-list__item--logo">
+          <div class="header__logo"><img src="img/logo.svg" height="45" width="330" alt="Oxford Journals" /></div>
+        </li>
+        <li class="header-list__item">
+          <nav class="header__nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">Journals A to Z</li>
+              <li class="nav-list__item">Journals to Subjects</li>
+              <li class="nav-list__item">Customer Services</li>
+              <li class="nav-list__item">Resources</li>
+              <li class="nav-list__item">
+                <input type="search" />
+              </li>
+              <li class="nav-list__item">Advanced Search</li>
+            </ul>
+          </nav>
+        </li>
       </ul>
-    </nav>
+      <div class="header-wrapper">
   </header>
   <main class="main">
     <section class="news">
@@ -75,148 +86,171 @@
       </ul>
     </section>
     <section class="resources">
-      <h2 class="resources__title">Resources for...</h2>
-      <ul class="resources-list">
-        <li class="resources-list__item">Authors</li>
-        <li class="resources-list__item">Librarians</li>
-        <li class="resources-list__item">Societies</li>
-        <li class="resources-list__item">Sponsors and advertisers</li>
-      </ul>
-    </section>
-    <section class="picture"><img src="" alt="" class="picture__image"></section>
-    <section class="articles">
-      <h2 class="articles__header">From the OUPblog</h2>
-        <ul class="articles-list">
-          <li class="articles-list__item">
-          <div class="blog">
-            <h3 class="blog__header">How do male hummingbird dance moves alter their appearance?</h2>
-      <img src="img/blog1.jpg" alt="Blog image" class="blog__image" width="288" height="162">
-      <p class="blog__description">Do their feathers or the sun play a part in their colourful display?</p>
+      <div class="resources-wrapper">
+        <div class="resources__title">
+          <h2>Resources for...</h2>
+        </div>
+        <ul class="resources-list">
+          <li class="resources-list__item">
+            <img src="img/resources1.jpg" alt="Authors" width="350" height="200">
+            <span>Authors</span>
+          </li>
+          <li class="resources-list__item">
+            <img src="img/resources2.jpg" alt="Librarians" width="350" height="200">
+            <span>Librarians</span>
+          </li>
+          <li class="resources-list__item">
+            <img src="img/resources3.jpg" alt="Societies" width="350" height="200">
+            <span>Societies</span>
+          </li>
+          <li class="resources-list__item">
+            <img src="img/resources4.jpg" alt="Sponsors and advertisers" width="350" height="200">
+            <span>Sponsors and advertisers</span>
+          </li>
+        </ul>
       </div>
-      </li>
-      <li class="articles-list__item">
-        <div class="blog">
-          <h3 class="blog__header">Social media use and disturbed sleep</h2>
-          <img src="img/blog2.jpg" alt="Blog image" class="blog__image" width="288" height="162">
-          <p class="blog__description">Chasing those likes can keep you awake at night.</p>
+    </section>
+    <section class="picture">
+      <div class="picture-wrapper">
+        <div>
+          <iframe class="picture__image" src="//players.brightcove.net/1611106596001/default_default/index.html?videoId=5245825091001"></iframe>
         </div>
-      </li>
-      <li class="articles-list__item">
-        <div class="blog">
-          <h3 class="blog__header">Towards a postcolonial nineteenth century</h2>
-          <img src="img/blog3.jpg" alt="Blog image" class="blog__image" width="288" height="162">
-          <p class="blog__description">On the exciting areas of crossover between the fields of postcolonialism and French studies.</p>
-        </div>
-      </li>
-      <li class="articles-list__item">
-        <div class="blog">
-          <h3 class="blog__header">Do government officials discriminate?</h2>
-          <img src="img/blog4.jpg" alt="Blog image" class="blog__image" width="288" height="162">
-          <p class="blog__description">It appears that some tend to be less responsive to certain demographics than others.</p>
-        </div>
-      </li>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="articles__header">
+        <h2>From the OUPblog</h2>
+      </div>
+      <ul class="articles-list">
+        <li class="articles-list__item">
+          <div class="blog">
+            <img src="img/blog1.jpg" alt="Blog image" class="blog__image" width="288" height="162">
+            <h3 class="blog__header">How do male hummingbird dance moves alter their appearance?</h2>
+            <p class="blog__description">Do their feathers or the sun play a part in their colourful display?</p>
+          </div>
+        </li>
+        <li class="articles-list__item">
+          <div class="blog">
+            <img src="img/blog2.jpg" alt="Blog image" class="blog__image" width="288" height="162">
+            <h3 class="blog__header">Social media use and disturbed sleep</h2>
+            <p class="blog__description">Chasing those likes can keep you awake at night.</p>
+          </div>
+          </li>
+        <li class="articles-list__item">
+          <div class="blog">
+            <img src="img/blog3.jpg" alt="Blog image" class="blog__image" width="288" height="162">
+            <h3 class="blog__header">Towards a postcolonial nineteenth century</h2>
+            <p class="blog__description">On the exciting areas of crossover between the fields of postcolonialism and French studies.</p>
+          </div>
+        </li>
+        <li class="articles-list__item">
+          <div class="blog">
+            <img src="img/blog4.jpg" alt="Blog image" class="blog__image" width="288" height="162">
+            <h3 class="blog__header">Do government officials discriminate?</h2>
+            <p class="blog__description">It appears that some tend to be less responsive to certain demographics than others.</p>
+          </div>
+        </li>
       </ul>
     </section>
     <section class="books">
-      <h2 class="books__title">
+      <h2 class="books__title">New to Oxford Academic in 2018</h2>
         <ul class="books-list">
           <li class="books-list__item">
             <div class="book">
               <img src="img/book1.jpg" alt="Book image" class="book__image" width="130" height="170">
               <h3 class="book__title">Advances in Nutrition</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book2.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">The American Journal of Nutrition</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book3.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">American Journal of Health-System Pharmacy</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book4.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">Animal Frontiers</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book5.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">Annals of Behavioral Medicine</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book6.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">Antibody Therapeutics</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book7.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">Clean Energy</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book8.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">Communication, Culture, and Critique</h3>
-            </div>
-          </li>
-          <li class="books-list__item">
-            <div class="book">
-              <img src="img/book9.jpg" alt="Book image" class="book__image" width="130" height="170">
-              <h3 class="book__title">Communication Theory</h3>
-            </div>
-          </li>
-        </ul>
-      </h2>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book2.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">The American Journal of Nutrition</h3>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book3.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">American Journal of Health-System Pharmacy</h3>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book4.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">Animal Frontiers</h3>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book5.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">Annals of Behavioral Medicine</h3>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book6.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">Antibody Therapeutics</h3>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book7.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">Clean Energy</h3>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book8.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">Communication, Culture, and Critique</h3>
+          </div>
+        </li>
+        <li class="books-list__item">
+          <div class="book">
+            <img src="img/book9.jpg" alt="Book image" class="book__image" width="130" height="170">
+            <h3 class="book__title">Communication Theory</h3>
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="connect">
       <h2 class="connect__title">Connect</h2>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <div class="network">
-              <img src="img/Twitter.png" alt="Twitter" class="network__image" width="35" height="35">
-              <span class="network__name">Twitter</span>
-            </div>
-          </li>
-          <li class="social-list__item">
-            <div class="network">
-              <img src="img/Facebook.png" alt="Facebook" class="network__image" width="35" height="35">
-              <span class="network__name">Facebook</span>
-            </div>
-          </li>
-          <li class="social-list__item">
-            <div class="network">
-              <img src="img/Youtube.png" alt="Youtube" class="network__image" width="35" height="35">
-              <span class="network__name">Youtube</span>
-            </div>
-          </li>
-          <li class="social-list__item">
-            <div class="network">
-              <img src="img/Tumblr.png" alt="Tumblr" class="network__image" width="35" height="35">
-              <span class="network__name">Tumblr</span>
-            </div>
-          </li>
-          <li class="social-list__item">
-            <div class="network">
-              <img src="img/OUPblog.png" alt="OUPblog" class="network__image" width="35" height="35">
-              <span class="network__name">OUPblog</span>
-            </div>
-          </li>
-          <li class="social-list__item">
-            <div class="network">
-              <img src="img/Mail.png" alt="Mail" class="network__image" width="35" height="35">
-              <span class="network__name">Join our mailing list</span>
-            </div>
-          </li>
-        </ul>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <div class="network">
+            <img src="img/Twitter.png" alt="Twitter" class="network__image" width="35" height="35">
+            <span class="network__name">Twitter</span>
+          </div>
+        </li>
+        <li class="social-list__item">
+          <div class="network">
+            <img src="img/Facebook.png" alt="Facebook" class="network__image" width="35" height="35">
+            <span class="network__name">Facebook</span>
+          </div>
+        </li>
+        <li class="social-list__item">
+          <div class="network">
+            <img src="img/Youtube.png" alt="Youtube" class="network__image" width="35" height="35">
+            <span class="network__name">Youtube</span>
+          </div>
+        </li>
+        <li class="social-list__item">
+          <div class="network">
+            <img src="img/Tumblr.png" alt="Tumblr" class="network__image" width="35" height="35">
+            <span class="network__name">Tumblr</span>
+          </div>
+        </li>
+        <li class="social-list__item">
+          <div class="network">
+            <img src="img/OUPblog.png" alt="OUPblog" class="network__image" width="35" height="35">
+            <span class="network__name">OUPblog</span>
+          </div>
+        </li>
+        <li class="social-list__item">
+          <div class="network">
+            <img src="img/Mail.png" alt="Mail" class="network__image" width="35" height="35">
+            <span class="network__name">Join our mailing list</span>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
