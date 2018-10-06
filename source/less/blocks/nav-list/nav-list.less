@@ -1,7 +1,13 @@
 .nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list .nav-list__item:not(.search):not(.burger) {
   display: none;
 }
 
-.nav-list .nav-list__item {
-
+.nav-list__item[input] {
+  display: none;
 }

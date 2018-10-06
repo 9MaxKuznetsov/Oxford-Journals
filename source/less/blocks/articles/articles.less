@@ -1,15 +1,24 @@
-.articles {
-
-}
-
 .articles .articles__header {
   width: 350px;
   margin: 0 auto;
 }
 
-.articles .articles__header h2 {
+.articles__header h2 {
+  position: relative;
+  padding-left: 20px;
+  font-weight: bold;
   text-align: left;
   color: #2a2a2a;
-  font-weight: bold;
-  padding-left: 20px;
+}
+
+.articles__header h2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 5px;
+  height: 32px;
+  background-color: #002147;
+  border: 2px solid #002147;
+  border-radius: 0;
 }
