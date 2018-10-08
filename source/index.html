@@ -26,16 +26,19 @@
         </li>
         <li class="header-list__item header-list__item--logo">
           <div class="header__logo">
-            <h1>
+            <a class="header__logo-link">
+              <h1>
               <span class="visually-hidden">Oxford Journals</span>
               <img class="header__image" src="img/logo.svg" height="45" width="330" alt="Oxford Journals" />
             </h1>
+            </a>
           </div>
         </li>
         <li class="header-list__item">
           <div class="search">
-            <button class="search__button"></button>
-            <input type="search" />
+            <button class="search__button search__button--show"></button>
+            <input class="search__input search__input--show" type="search" />
+            <button class="search__button-close search__button-close--show"></button>
           </div>
         </li>
         <li class="header-list__item burger">
@@ -45,10 +48,10 @@
       <nav class="header__nav header__nav--show">
         <div class="header__nav-wrapper">
           <ul class="nav-list">
-            <li class="nav-list__item">Journals A to Z</li>
-            <li class="nav-list__item">Journals by Subject</li>
-            <li class="nav-list__item">Customer Servives</li>
-            <li class="nav-list__item">Resources</li>
+            <li class="nav-list__item"><a href="#">Journals A to Z</a></li>
+            <li class="nav-list__item"><a href="#">Journals by Subject</a></li>
+            <li class="nav-list__item"><a href="#">Customer Servives</a></li>
+            <li class="nav-list__item"><a href="#">Resources</a></li>
           </ul>
         </div>
       </nav>
@@ -272,4 +275,5 @@
     </div>
   </footer>
   <script src="js/menu.js"></script>
+  <script src="js/search.js"></script>
 </body>

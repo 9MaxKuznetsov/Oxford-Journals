@@ -1,5 +1,5 @@
 .search {
-
+  position: relative;
 }
 
 .search .search__button {
@@ -12,6 +12,51 @@
   margin-left: 177px;
 }
 
-.search input {
+.search__button {
+  outline: 0;
+}
+
+.search__input {
   display: none;
+}
+
+.search__input--show {
+  display: block;
+  width: 150px;
+  margin-left: 20px;
+  border-radius: 15px;
+  border-color: #002147;
+  padding: 3px 15px 3px 15px;
+  animation: slideInRight;
+  animation-duration: 0.28s;
+}
+
+.search__input--show:focus {
+  outline: 0;
+}
+
+.search .search__button--show {
+  display: none;
+}
+
+.search__button-close {
+  display: none;
+}
+
+.search__button-close--show {
+  display: block;
+  background-image: url("../img/cancel.svg");
+  background-color: transparent;
+  border: none;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 173px;
+  top: 7px;
+  animation-name: slideInRightForCloseButton;
+  animation-duration: 0.28s;
+}
+
+.search__button-close--show:focus {
+  outline: 0;
 }

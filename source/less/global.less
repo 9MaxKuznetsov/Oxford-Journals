@@ -44,79 +44,77 @@ body {
   overflow: hidden;
 }
 
-.center {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.pop-up-center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 50;
-  margin: 0 auto;
-
-  background-color: transparent;
-  transform: translate(-50%, -50%);
-}
-
-@media (min-width: @tablet-width) {
-  .center {
-    width: @tablet-width;
-    margin: 0 auto;
-  }
-
-  .center--flex {
-    display: flex;
-    position: relative;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .center {
-    width: @desktop-width;
-    margin: 0 auto;
-  }
-
-  .post-main {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  .full-width {
-    margin-left: ~"calc(-100vw / 2 + 977px / 2)";
-    margin-right: ~"calc(-100vw / 2 + 977px / 2)";
-  }
-}
-
-@keyframes bounceInDown {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translate3d(0, 25px, 0);
-  }
-
-  75% {
-    transform: translate3d(0, -10px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, 5px, 0);
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
   }
 
   to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -90%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(35%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+@keyframes slideInRightForCloseButton {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(400%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
