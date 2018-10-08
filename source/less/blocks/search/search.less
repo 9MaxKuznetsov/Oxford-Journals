@@ -22,11 +22,11 @@
 
 .search__input--show {
   display: block;
-  width: 150px;
+  width: 133px;
   margin-left: 20px;
   border-radius: 15px;
   border-color: #002147;
-  padding: 3px 15px 3px 15px;
+  padding: 3px 32px 3px 15px;
   animation: slideInRight;
   animation-duration: 0.28s;
 }
@@ -59,4 +59,31 @@
 
 .search__button-close--show:focus {
   outline: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .search .search__button {
+    width: 30px;
+    height: 30px;
+    margin-left: 430px;
+  }
+
+  .search__input--show {
+    width: 390px;
+    padding: 4px 32px 4px 15px;
+  }
+
+  .search__button-close--show {
+    display: block;
+    background-image: url("../img/cancel.svg");
+    background-color: transparent;
+    border: none;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 428px;
+    top: 7px;
+    animation-name: slideInRightForCloseButton;
+    animation-duration: 0.24s;
+  }
 }

@@ -8,13 +8,40 @@
 }
 
 .promo-item .promo-item__header {
-  .set-default-header;
   width: 300px;
   margin: 18px auto;
+
+  .set-default-header;
 }
 
 .promo-item .promo-item__description {
-  .set-default-paragraph;
   width: 300px;
   margin: 0 auto;
+
+  .set-default-paragraph;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-item .promo-item__image {
+    width: 300px;
+    outline: 1px solid #f3f4f8;
+  }
+
+  .promo-item .promo-item__header {
+    width: 260px;
+    margin: 10px auto;
+
+    font-size: 21px;
+  }
+
+  .promo-item .promo-item__description {
+    margin: 0 auto;
+    width: 260px;
+
+    font-size: 16px;
+  }
+
+  .promo-item {
+    width: 300px;
+  }
 }
