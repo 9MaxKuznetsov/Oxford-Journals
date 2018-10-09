@@ -10,3 +10,33 @@
   padding: 0px 0px 18px 0px;
   margin-bottom: 25px;
 }
+
+@media (min-width: @tablet-width) {
+  .articles-list {
+    width: 660px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .articles-list .articles-list__item {
+    width: 300px;
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  .articles-list .articles-list__item:nth-of-type(2n) {
+    position: relative;
+  }
+  .articles-list .articles-list__item:nth-of-type(2n)::before {
+    content: "";
+    position: absolute;
+    left: -17px;
+    top: 0px;
+    width: 3px;
+    height: 320px;
+    background-color: #f3f4f8;
+  }
+}
