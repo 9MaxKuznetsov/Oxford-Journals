@@ -1,4 +1,4 @@
-  .header {
+.header {
   margin: 0 auto;
 }
 
@@ -42,5 +42,26 @@
   .header .header__logo {
     width: 115px;
     height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header .header__logo {
+    width: 330px;
+    height: 46px;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .header__logo h1 {
+    padding: 0px;
+  }
+
+  .header__nav {
+    display: block;
+    background-color: #062244;
+  }
+
+  .header__nav-wrapper {
+    background-color: #062244;
   }
 }

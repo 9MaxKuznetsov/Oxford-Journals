@@ -27,3 +27,26 @@
     padding: 15px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .nav-list .nav-list__item  {
+    width: auto;
+    border: none;
+    background-color: transparent;
+    margin: 0px;
+  }
+
+  .nav-list__item a {
+    color: #ffffff;
+    font-weight: 300;
+  }
+}
