@@ -12,9 +12,35 @@
   position: absolute;
   top: -1px;
   left: 0;
+
   width: 5px;
   height: 32px;
+
   background-color: #002147;
   border: 2px solid #002147;
   border-radius: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .connect {
+    width: 660px;
+  }
+
+  .connect .connect__title {
+    padding: 0;
+    padding-top: 30px;
+    margin: 0 auto;
+
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .connect__title::before {
+    top: 77px;
+    left: 290px;
+
+    width: 80px;
+    height: 4px;
+  }
 }

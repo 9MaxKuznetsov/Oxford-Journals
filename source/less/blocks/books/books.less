@@ -1,11 +1,10 @@
-
-
 .books .books__title {
-  .set-default-title;
   width: 350px;
   margin: 0 auto;
   padding-top: 15px;
+
   font-size: 24px;
+
   .set-default-title;
 }
 
@@ -14,9 +13,33 @@
   position: absolute;
   top: 17px;
   left: 0;
+
   width: 5px;
   height: 58px;
+
   background-color: #002147;
   border: 2px solid #002147;
   border-radius: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .books .books__title {
+    position: relative;
+    padding: 0px;
+    padding-top: 30px;
+
+    width: 660px;
+
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .books .books__title::before {
+    top: 77px;
+    left: 208px;
+
+    width: 240px;
+    height: 4px;
+  }
 }
