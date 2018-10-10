@@ -39,3 +39,16 @@
     background-color: #f3f4f8;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .news-list {
+    width: 960px;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .news-list .news-list__item {
+    width: 470px;
+  }
+}
