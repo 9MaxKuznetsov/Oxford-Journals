@@ -36,3 +36,30 @@
     background-color: #f3f4f8;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .social-list {
+    width: 960px;
+    justify-content: space-between;
+  }
+
+  .social-list .social-list__item {
+    width: 160px;
+    position: relative;
+  }
+
+  .social-list .social-list__item:not(:nth-of-type(3n))::before {
+      width: 0px;
+      height: 0px;
+    }
+
+    .social-list .social-list__item:not(:first-of-type)::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 2px;
+      height: 110px;
+      background-color: #f3f4f8;
+    }
+}

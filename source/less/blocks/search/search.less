@@ -4,12 +4,13 @@
 
 .search .search__button {
   display: block;
-  background-image: url("../img/search.svg");
-  background-color: transparent;
-  border: none;
   width: 25px;
   height: 25px;
   margin-left: 177px;
+
+  background-color: transparent;
+  background-image: url("../img/search.svg");
+  border: none;
 }
 
 .search__button {
@@ -24,9 +25,11 @@
   display: block;
   width: 133px;
   margin-left: 20px;
-  border-radius: 15px;
-  border-color: #002147;
   padding: 3px 32px 3px 15px;
+
+  border-color: #002147;
+  border-radius: 15px;
+
   animation: slideInRight;
   animation-duration: 0.28s;
 }
@@ -44,21 +47,28 @@
 }
 
 .search__button-close--show {
+  position: absolute;
+  top: 7px;
+  left: 173px;
+
   display: block;
-  background-image: url("../img/cancel.svg");
-  background-color: transparent;
-  border: none;
   width: 16px;
   height: 16px;
-  position: absolute;
-  left: 173px;
-  top: 7px;
+
+  background-color: transparent;
+  background-image: url("../img/cancel.svg");
+  border: none;
+
   animation-name: slideInRightForCloseButton;
   animation-duration: 0.28s;
 }
 
 .search__button-close--show:focus {
   outline: 0;
+}
+
+.search__input::placeholder {
+  color: transparent;
 }
 
 @media (min-width: @tablet-width) {
@@ -74,22 +84,24 @@
   }
 
   .search__button-close--show {
-    display: block;
-    background-image: url("../img/cancel.svg");
-    background-color: transparent;
-    border: none;
+    position: absolute;
+    top: 7px;
+    left: 428px;
+
     width: 18px;
     height: 18px;
-    position: absolute;
-    left: 428px;
-    top: 7px;
+
+    background-color: transparent;
+    background-image: url("../img/cancel.svg");
+    border: none;
+
     animation-name: slideInRightForCloseButton;
     animation-duration: 0.24s;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .search__input--show  {
+  .search__input--show {
     display: none;
   }
 
@@ -99,5 +111,39 @@
 
   .search .search__button {
     display: none;
+  }
+
+  .search__input {
+    position: relative;
+    display: block;
+    width: 420px;
+    margin: 0px 0px 8px 100px;
+    padding: 8px 15px 8px 15px;
+
+    border-color: #002147;
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  .search__input:focus {
+    outline: none;
+  }
+
+  .search__input::before {
+    content: "";
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+  }
+
+  .search__input::placeholder {
+    color: #062244;
+    font-size: 15px;
+    padding-left: 5px;
   }
 }

@@ -30,6 +30,7 @@
   .articles-list .articles-list__item:nth-of-type(2n) {
     position: relative;
   }
+
   .articles-list .articles-list__item:nth-of-type(2n)::before {
     content: "";
     position: absolute;
@@ -37,6 +38,38 @@
     top: 0px;
     width: 3px;
     height: 320px;
+    background-color: #f3f4f8;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .articles-list {
+    width: 960px;
+    justify-content: space-between;
+  }
+
+  .articles-list .articles-list__item  {
+    width: 215px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .articles-list .articles-list__item:nth-of-type(2n)::before {
+    left: -19px;
+    top: 0px;
+    width: 3px;
+    height: 240px;
+    border-radius: 10px;
+  }
+
+  .articles-list .articles-list__item:not(:first-of-type)::before {
+    content: "";
+    position: absolute;
+    left: -19px;
+    top: 0px;
+    width: 3px;
+    height: 240px;
+    border-radius: 10px;
     background-color: #f3f4f8;
   }
 }
