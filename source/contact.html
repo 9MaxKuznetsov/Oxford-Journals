@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Oxford Journals - Max Kuznetsov</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <ul class="header-list">
+        <li class="header-list__item">
+          <div class="header__menu">
+            <ul class="actions-list">
+              <li class="actions-list__item">Sign In</li>
+              <li class="actions-list__item">Sign Up</li>
+            </ul>
+          </div>
+        </li>
+        <li class="header-list__item header-list__item--logo">
+          <div class="header__logo">
+            <a class="header__logo-link" href="index.html">
+              <h1>
+              <span class="visually-hidden">Oxford Journals</span>
+              <picture class="header__picture">
+                <source media="(min-width: 960px)" srcset="img/logo-full.svg">
+                <img class="header__image" src="img/logo.svg" height="45" width="330" alt="Oxford Journals" />
+              </picture>
+            </h1>
+            </a>
+          </div>
+        </li>
+        <li class="header-list__item">
+          <div class="search">
+            <button class="search__button search__button--show"></button>
+            <input class="search__input search__input--show" type="search" placeholder="Search: Start typing your text here"/>
+            <button class="search__button-close search__button-close--show"></button>
+          </div>
+        </li>
+        <li class="header-list__item burger">
+          <button class="burger__button"></button>
+        </li>
+      </ul>
+      <nav class="header__nav header__nav--show">
+        <div class="header__nav-wrapper">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#">Journals A to Z</a></li>
+            <li class="nav-list__item"><a href="#">Journals by Subject</a></li>
+            <li class="nav-list__item"><a href="#">Customer Servives</a></li>
+            <li class="nav-list__item"><a href="#">Resources</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="contact">
+      <h2 class="contact__title">Contact us</h2>
+      <p class="contact__description">Please select the appropriate option from the list below:</p>
+      <ul class="conact-list">
+        <li class="conact-list__item">Collection sales, consortia, and multi-site enquires and quotations </li>
+        <li class="conact-list__item">Library marketing</li>
+        <li class="conact-list__item">Enquiries regarding bulk article reprints, e-prints, bulk subscriptions and supplements</li>
+        <li class="conact-list__item">Rights, permissions and translations</li>
+        <li class="conact-list__item">Marketing enquiries    </li>
+        <li class="conact-list__item">Press enquiries</li>
+        <li class="conact-list__item">Conference/exhibition enquiries</li>
+        <li class="conact-list__item">Contact information for learned societies </li>
+        <li class="conact-list__item">Authors are requested to visit the particular journal of interest for specific contact details.</li>
+        <li class="conact-list__item">Enquiries regarding classified advertising on the Journals Career Network</li>
+        <li class="conact-list__item">All other advertising enquiries</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <p class="footer__description"><span>Oxford</span> University Press is a department of the University of Oxford. It furthers the University's objective of excellence in research, scholarship, and education by publishing worldwide.</p>
+      <img src="img/logo-footer.svg" alt="Oxford Journals" class="footer__logo" width="150" height="42">
+    </div>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/search.js"></script>
+</body>
