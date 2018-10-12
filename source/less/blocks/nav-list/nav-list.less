@@ -57,7 +57,6 @@
     border: none;
     background-color: transparent;
     margin: 0px;
-    border-bottom: 2px solid transparent;
   }
 
   .nav-list__item a {
@@ -67,10 +66,14 @@
 
   .nav-list .nav-list__item:hover {
     background-color: transparent;
-    border-bottom: 2px solid white;
   }
 
   .nav-list .nav-list__item:hover::before {
     background-color: transparent;
+  }
+
+  .nav-list__link:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 13px;
   }
 }
