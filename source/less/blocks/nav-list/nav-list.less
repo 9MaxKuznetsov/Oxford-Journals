@@ -5,13 +5,27 @@
 }
 
 .nav-list .nav-list__item {
+  position: relative;
   width: 350px;
   margin: 0 auto;
   font-size: 15px;
   font-weight: 300;
-  background-color: #f5f7fa;
   border-top: 1px solid #cfd5e4;
   padding: 10px;
+}
+
+.nav-list .nav-list__item:hover {
+  background-color: #f5f7fa;
+}
+
+.nav-list .nav-list__item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 4px;
+  height: 100%;
+  background-color: #cfd5e4;
 }
 
 .nav-list__item a {
@@ -43,10 +57,20 @@
     border: none;
     background-color: transparent;
     margin: 0px;
+    border-bottom: 2px solid transparent;
   }
 
   .nav-list__item a {
     color: #ffffff;
     font-weight: 300;
+  }
+
+  .nav-list .nav-list__item:hover {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+  }
+
+  .nav-list .nav-list__item:hover::before {
+    background-color: transparent;
   }
 }
