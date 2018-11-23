@@ -40,7 +40,14 @@
         <li class="header-list__item">
           <div class="search">
             <button class="search__button search__button--show"></button>
-            <input class="search__input search__input--show" type="search" placeholder="Search: Start typing your text here"/>
+           <form name="" action="search.php" method="GET">
+				<table>
+					<tr>
+						<td><input class="search__input search__input--show" type="text" name="q" placeholder="Search: Start typing your text here"/></td>
+						<td><input type="submit" name="click" ></td>
+					</tr>
+				</table>
+			</form>
             <button class="search__button-close search__button-close--show"></button>
           </div>
         </li>
